@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic</title>
+  <style>
+    #cd,#ds{
+        font-family: 'Trebuchet MS';
+        width: 20vw;
+        height: 48px;
+        padding-top: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+    #ds{
+        color: white;
+        background-color: black;
+    }
+    #da{
+        width: 60vw;
+        height: 30vh;
+    }
+    #dynamic{
+        display: flex;
+    }
+  </style>
+</head>
+<body>
+    <div id="dynamic">
+        <p id="dc">Create Web Page</p>
+        <img id="da" src="./image/building a.jpg" alt="">
+        <p id="ds">Colors</p>
+
+    </div>
+    <script>
+        let texts=[
+            "Create Web Page",
+            "Style Web Page",
+            "Make Interactive Element",
+            "Create Responsive Website",
+            "Create User friendly UI"
+        ];
+        let i=1;
+        setInterval(function(){
+            let dc=document.getElementById("dc");
+            dc.textContent=texts[i];
+            i=(i+1) % 5; /* សញ្ញា​​ %​ គឺចែកយកសំណល់ */
+        },2000);
+
+       let images=[
+            "building a.jpg",
+            "ceremony hall.jpg",
+            "cjcc.jpg",
+            "ckcc.jpg",
+            "ifl.jpg"
+       ];
+       let j=1;
+       let da=document.getElementById("da");
+       da.addEventListener("click",function(){
+        da.setAttribute("src","./image/" + images[j]);
+        //j= (j+1) % 5;
+         /*images.length : instead of hardcoding 5 to make the code more flexible.*/
+        j=(j+1) % images.length;
+       });
+
+       let colors=[
+            ["black","pink"],
+            ["white","blue"],
+            ["black","orange"],
+            ["white","red"],
+            ["black","purple"], 
+            ["white","green"],
+            ["black","yellow"]
+        ];
+       let k=0;
+       setInterval(()=>{
+        let ds = document.getElementById("ds");
+        ds.style.color=colors[k][0];
+        ds.style.backgroundColor=colors[k][1];
+        k=(k+1)%7;
+    
+       },2000);
+    </script>
+</body>
+</html>

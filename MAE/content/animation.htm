@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animation</title>
+  <style>
+   @keyframes move4 {
+      0%{left: 0;top: 0;}
+      25% {left: 2vw;top: 0;}
+      50% {left: 0; top: 0;}
+      75%{left: 0; top: 2vh;}
+      100%{left: 0;top: 0;}
+    }
+   #ani{
+    display: block; 
+    margin:0 auto; 
+    border:16px ridge gold; 
+    position: relative; 
+    height:90vh; 
+    width: 90vw; 
+    animation: move4 4s infinite;
+  }
+  </style>
+</head>
+<body>
+  <img src="../image/rupp.jpg" alt="សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ" id="ani">
+</body>
+</html>

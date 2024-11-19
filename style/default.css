@@ -1,0 +1,16 @@
+/* កំណត់ពុម្ពអក្សរនៃវេបផេកឬវេបសាយដោយយកធាតុbodyមកកំណត់font-family */
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: royalblue;
+}
+a:hover{
+    background-color: blue;
+    color:red;
+}
+.button{
+    background-color:yellow;
+    color: rgb(139, 13, 13);
+}

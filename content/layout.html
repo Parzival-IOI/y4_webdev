@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+            
+        }
+        nav a{
+            text-decoration: none;
+            background: lightgray;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-rows: 80vh; /* view port vh vw */
+            background: gray;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="text.html">text</a>
+            <a href="image.html">image</a>
+        </nav>
+    </header>
+    <header>
+        <div class="container">
+            <aside>
+                <p>left</p>
+            </aside>
+            <main>
+                <p>main</p>
+            </main>
+            <aside>
+                <p>right</p>
+            </aside>
+        </div>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </header>
+    
+</body>
+</html>
