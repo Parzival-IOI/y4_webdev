@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Structure</title>
+        <link rel="stylesheet" href="./style/default.css">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        
+        <script defer src="../script/react.js" ></script>
+        <script defer src="../script/reactdom.js" ></script>
+        <script defer src="../script/babel.min.js" ></script>
+        <script defer src="../script/reactRouterDom.js" ></script>
+    </head>
+    <body >
+        <main id="root">
+
+        </main>
+    </body>
+    <a href="https://www.w3schools.com/">w3schools</a>
+
+
+    <script type="text/babel" >
+
+        const App = () => {
+            return (
+                <div>
+                    <Link></Link>
+                    <Main></Main> 
+                </div>
+            )
+        }
+
+        const Main = () => {
+            return (
+                <div>Main</div>
+            )
+        }
+ 
+        const Link = () => {
+            return (
+                <div>testing purpose only</div>
+            )
+        }
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+
+    </script>
+
+
+    <!-- <script src="./app.js" type="text/babel"></script> -->
+</html>
